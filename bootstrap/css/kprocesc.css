@@ -1,0 +1,218 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+footer {
+  /*background-color: black;*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  padding-top: 5px;
+}
+.dropdown .dropdown-item:hover{
+    background:#2ECC71;
+    color:white;
+              }
+.dropdown .dropdown-item{
+  /*background:red;*/
+  color:black;
+            }
+      .navbar .nav-link:hover{    
+    background:orange;
+    color:black;
+              }
+  .navbar, .navbar .navbar-brand{
+    background:#2ECC71;
+    color:white;
+              }
+              
+   /* 
+  .carousel-inner{
+    width:100%;
+    color:#2ECC71;
+    background:#2ECC71;
+  }*/
+  .carousel-indicators li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin:5px;
+      text-indent: 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 40%;
+      background-color:#2ECC71;
+      box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+  }/*
+  .carousel-indicators .active {
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      background-color: #2ECC71;
+  }*/
+  
+  /*MODAL CSS */
+
+  
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtnmodal, .cerrarbtnmodal {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtnmodal {
+  background-color: #ccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  
+  opacity: 0.9;
+}
+
+/* Add a color to the delete button */
+.cerrarbtnmodal {
+  background-color:orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  
+  opacity: 0.9;
+}
+
+/* Add padding and center-align text to the container */
+.containermodal {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 30%;
+  top: 30%;
+  width: 500px; /* Full width */
+  height: 300px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#ccc;
+  padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color:white;
+  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid orange;
+  width: 50%; /* Could be more or less, depending on screen size */
+  color:black;
+}
+
+/* Style the horizontal ruler 
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}*/
+ 
+/* The Modal Close Button (x) */
+.closemodal {
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #979191;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color:orange;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtnmodal, .cerrarbtnmodal {
+     width: 100%;
+  }
+}
+/*FIN MODAL CSS*/
+
+a:link,a:visited  {color:orange}
+
+/*a:active {estilos aquí}*/
+a:hover {color:black}
+
+/**** acordion */
+.accordion {
+  background-color: #ccc;
+  color:black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border:5px;
+  text-align: left;
+ 
+  font-size: 18px;
+  transition: 0.4s;
+}
+/*
+.active:after {
+  content: "\2796";  
+}
+
+.active {
+  background-color: #ccc;
+}*/
+.accordion:hover {
+  background-color:orange;
+}
+.panel {
+  padding: 10px 18px 0px 5px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: orange;
+  float: right;
+  margin-left: 5px;
+}
+#select_box2
+{
+ width:500px;
+ background-color:#ccc;
+ padding:5px;
+ height:40px;
+ border-radius:5px;
+ box-shadow:0px 0px 10px 0px grey;
+}
+
+select
+{
+ width:350px;
+ height:40px;
+ border:1px solid black;
+ margin-top:20px;
+ padding:5px;
+ font-size:16px;
+ color:black;
+ border-radius:5px;
+}
